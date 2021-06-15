@@ -75,6 +75,6 @@ $ yarn start ou yarn dev
 
 ## 📝 Licença
 
-Este projeto esta sobe a licença MIT.
+Este projeto esta sobe a [Licença MIT](./LICENSE).
 
 Feito com 💙 por Ivo Pereira ✌🏽 [Entre em contato ](https://www.linkedin.com/in/ivopereira-jr/)
