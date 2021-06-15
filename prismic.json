@@ -1,0 +1,122 @@
+{
+  // o modo que utilizei para criação do custom types continent no prismic
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "slug"
+      }
+    },
+    "imageslider" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "ImageSlider"
+      }
+    },
+    "titleslider" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "TitleSlider"
+      }
+    },
+    "summaryslider" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,heading2",
+        "label" : "SummarySlider"
+      }
+    },
+    "continentbanner" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "ContinentBanner"
+      }
+    },
+    "bannertitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2",
+        "label" : "BannerTitle"
+      }
+    },
+    "description" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,preformatted,heading4,heading5,heading6",
+        "label" : "Description"
+      }
+    },
+    "countries" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Countries",
+        "placeholder" : "paises"
+      }
+    },
+    "languages" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Languages",
+        "placeholder" : "linguas"
+      }
+    },
+    "cities" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Cities",
+        "placeholder" : "cidades"
+      }
+    },
+    "cities_100" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,heading4,heading5,heading6",
+        "label" : "Cities+100"
+      }
+    },
+    "citiessuggestions" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "thumbnail" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : { },
+              "thumbnails" : [ ],
+              "label" : "Thumbnail"
+            }
+          },
+          "flag" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : { },
+              "thumbnails" : [ ],
+              "label" : "Flag"
+            }
+          },
+          "city" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1,heading2,heading3",
+              "label" : "City"
+            }
+          },
+          "country" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "heading4,heading5,heading6",
+              "label" : "country",
+              "placeholder" : "pais"
+            }
+          }
+        },
+        "label" : "CitiesSuggestions"
+      }
+    }
+  }
+}
