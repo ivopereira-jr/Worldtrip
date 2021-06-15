@@ -1,8 +1,8 @@
-import { Flex, Grid, Icon, Image } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
 import { RiArrowLeftSLine } from 'react-icons/ri';
+import { Flex, Grid, Icon, Image } from '@chakra-ui/react';
+import { ButtonThemeMode } from '../ButtonThemeMode';
 
 export default function Header(): JSX.Element {
   const { asPath } = useRouter();
@@ -11,7 +11,7 @@ export default function Header(): JSX.Element {
   return (
     <Flex
       as="header"
-      bg="white"
+      // bg="white"
       w="100%"
       mx="auto"
       px="1rem"
@@ -47,6 +47,8 @@ export default function Header(): JSX.Element {
           justifySelf="center"
           gridColumn="2" // fixa na segunda posição
         />
+
+        <ButtonThemeMode />
       </Grid>
     </Flex>
   );

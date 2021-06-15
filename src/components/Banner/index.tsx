@@ -10,9 +10,10 @@ export default function Banner(): JSX.Element {
       bgSize="cover"
     >
       <Flex
+        w="100%"
+        maxW="1440px"
         justify={['center', 'space-between']}
         align="center"
-        w="100%"
         mx="auto"
         px={['4', '10', '15', '20', '36']}
       >

@@ -11,8 +11,11 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { RiInformationLine } from 'react-icons/ri';
+import { ContinentProps } from '../../pages/continent/[slug]';
 
-export default function ContinentContentInfos(): JSX.Element {
+export default function ContinentContentInfos({
+  continent,
+}: ContinentProps): JSX.Element {
   return (
     <Flex align="center" justify="space-between">
       <Flex
@@ -20,8 +23,8 @@ export default function ContinentContentInfos(): JSX.Element {
         justify="center"
         align={['flex-start', 'flex-start', 'center']}
       >
-        <Heading fontSize={['2xl', '5xl']} fontWeight="500" color="yellow.400">
-          50
+        <Heading fontSize={['2xl', '5xl']} fontWeight="500" color="yellow.300">
+          {continent.countries}
         </Heading>
         <Text fontSize={['md', 'xl']} fontWeight="600" color="gray.700">
           paises
@@ -32,8 +35,8 @@ export default function ContinentContentInfos(): JSX.Element {
         justify="center"
         align={['flex-start', 'flex-start', 'center']}
       >
-        <Heading fontSize={['2xl', '5xl']} fontWeight="500" color="yellow.400">
-          60
+        <Heading fontSize={['2xl', '5xl']} fontWeight="500" color="yellow.300">
+          {continent.languages}
         </Heading>
         <Text fontSize={['md', 'xl']} fontWeight="600" color="gray.700">
           linguas
@@ -44,8 +47,8 @@ export default function ContinentContentInfos(): JSX.Element {
         justify="center"
         align={['flex-start', 'flex-start', 'center']}
       >
-        <Heading fontSize={['2xl', '5xl']} fontWeight="500" color="yellow.400">
-          27
+        <Heading fontSize={['2xl', '5xl']} fontWeight="500" color="yellow.300">
+          {continent.cities}
         </Heading>
         <Text fontSize={['md', 'xl']} fontWeight="600" color="gray.700">
           cidades +100
@@ -62,11 +65,11 @@ export default function ContinentContentInfos(): JSX.Element {
                 />
               </span>
             </PopoverTrigger>
-            <PopoverContent bg="gray.700" color="yellow.400">
+            <PopoverContent bg="gray.700" color="yellow.300">
               <PopoverArrow bg="gray.700" />
               <PopoverCloseButton />
               <PopoverBody fontSize="lg" fontWeight="400">
-                brasil, eua, canada, frança, japao
+                {continent.cities_list}
               </PopoverBody>
             </PopoverContent>
           </Popover>
