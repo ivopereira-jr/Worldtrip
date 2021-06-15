@@ -16,8 +16,6 @@
   <img alt="license" src="https://img.shields.io/github/license/ivopereira-jr/worldtrip">
 </p>
 
-
-
 Tabela de conteúdos
 =================
 <!-- vscode-markdown-toc -->
@@ -39,9 +37,12 @@ Foi utilizado o Prismic CMS, para criação/armazenamento das informações util
 
 </br>
 
-<img src="public/worldtrip-movie.gif" width="100%">
+## 🚀 <a href="https://worldtour.vercel.app/" target="_blank">Worldtrip</a>
 
 </br>
+
+<img src="public/worldtrip-movie.gif" width="100%">
+
 </br>
 
 ## <a name='Tecnologias'></a> 🛠️ Tecnologias
@@ -75,7 +76,7 @@ $ git clone https://github.com/ivopereira-jr/worldtrip.git
 $ yarn
 
 # Execute a aplicação
-$ yarn start ou yarn dev
+$ yarn dev
 
 # O servidor inciará na porta:3000 - acesse http://localhost:3000
 ```
