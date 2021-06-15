@@ -1,4 +1,11 @@
-import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
 
 interface CityProps {
   name: string;
@@ -13,6 +20,8 @@ export default function City({
   city_image,
   city_flag,
 }: CityProps): JSX.Element {
+  const color = useColorModeValue('yellow.300', 'gray.500');
+
   return (
     <Box borderRadius="4px" overflow="hidden">
       <Image
@@ -27,7 +36,7 @@ export default function City({
         align="center"
         justify="space-between"
         border="1px"
-        borderColor="yellow.250"
+        borderColor={color}
         borderTop="0"
       >
         <Flex direction="column">

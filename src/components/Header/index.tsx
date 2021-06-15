@@ -1,12 +1,21 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { RiArrowLeftSLine } from 'react-icons/ri';
-import { Flex, Grid, Icon, Image } from '@chakra-ui/react';
-import { ButtonThemeMode } from '../ButtonThemeMode';
+import { FiSun, FiMoon } from 'react-icons/fi';
+import {
+  Flex,
+  Grid,
+  Icon,
+  Image,
+  Button,
+  useColorMode,
+} from '@chakra-ui/react';
 
 export default function Header(): JSX.Element {
   const { asPath } = useRouter();
   const isHomePage = asPath === '/';
+
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Flex
@@ -48,7 +57,15 @@ export default function Header(): JSX.Element {
           gridColumn="2" // fixa na segunda posição
         />
 
-        <ButtonThemeMode />
+        <Button
+          w="40px"
+          h="40px"
+          bgColor="transparent"
+          onClick={toggleColorMode}
+          justifySelf="end"
+        >
+          <Icon w={6} h={6} as={colorMode === 'light' ? FiMoon : FiSun} />
+        </Button>
       </Grid>
     </Flex>
   );

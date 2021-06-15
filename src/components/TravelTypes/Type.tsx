@@ -1,4 +1,10 @@
-import { Flex, Image, Text, useBreakpointValue } from '@chakra-ui/react';
+import {
+  Flex,
+  Image,
+  Text,
+  useBreakpointValue,
+  useColorModeValue,
+} from '@chakra-ui/react';
 
 interface TypesProps {
   icon: string;
@@ -10,6 +16,7 @@ export default function Type({ icon, text }: TypesProps): JSX.Element {
     base: false,
     sm: true,
   });
+  const color = useColorModeValue('gray.700', 'gray.500');
 
   return (
     <Flex direction={['row', 'column']} align="center" justify="center">
@@ -21,7 +28,7 @@ export default function Type({ icon, text }: TypesProps): JSX.Element {
         </Text>
       )}
 
-      <Text fontSize={['md', 'xl', '2xl']} fontWeight="600" color="gray.700">
+      <Text fontSize={['md', 'xl', '2xl']} fontWeight="600" color={color}>
         {text}
       </Text>
     </Flex>
