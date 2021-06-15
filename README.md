@@ -16,27 +16,35 @@
   <img alt="license" src="https://img.shields.io/github/license/ivopereira-jr/worldtrip">
 </p>
 
+
+
 Tabela de conteúdos
 =================
-<!--ts-->
-   * [Tabela de Conteudo](#-tabela-de-conteudo)
-   * [Sobre](#-sobre-o-projeto)
-   * [Tecnologias](#-tecnologias)
-   * [Como usar](#-como-executar-o-projeto)
-   * [Licença](#-Licença)
-<!--te-->
+<!-- vscode-markdown-toc -->
+* [Sobre o projeto](#Sobreoprojeto)
+* [Tecnologias](#Tecnologias)
+*	[Pré-requisitos](#Pr-requisitos)
+* [Como executar o projeto](#Comoexecutaroprojeto)
+* [Licença](#Licena)
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
 
-## ℹ️ Sobre o projeto
+## <a name='Sobreoprojeto'></a> ℹ️ Sobre o projeto
 Worldtrip traz algumas informações sobre 5 continentes e algumas das suas principais cidades
 
 Foi utilizado o Prismic CMS, para criação/armazenamento das informações utilizadas no projeto e Também o Chakra-ui para o design, modo responsivo e o modo light/dark o Swiper foi utilizado para o slider
 
 </br>
 
-<video src="public/worldtrip-movie.mp4" autoplay width="100%" height="500px"></video>
+<img src="public/worldtrip-movie.gif" width="100%">
+
+</br>
 </br>
 
-## 🛠️ Tecnologias
+## <a name='Tecnologias'></a> 🛠️ Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -48,13 +56,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 </br>
 
-### Pré-requisitos
+### <a name='Pr-requisitos'></a> Pré-requisitos
 
 Antes de começar você vai precisar ter criar os documentos no prismic e colocar as informações caso não tenha uma conta no prismic so criar tem planos gratuitos e pagos no arquivo prismic.json tem a estrutura que eu utilizei para criação do document
 
 </br>
 
-## ⚙ Como executar o projeto
+## <a name='Comoexecutaroprojeto'></a> ⚙ Como executar o projeto
 
 ```bash
 # Clone este repositório
@@ -73,7 +81,7 @@ $ yarn start ou yarn dev
 ```
 </br>
 
-## 📝 Licença
+## <a name='Licena'></a> 📝 Licença
 
 Este projeto esta sobe a [Licença MIT](./LICENSE).
 
