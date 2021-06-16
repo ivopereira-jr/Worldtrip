@@ -37,10 +37,6 @@ export default function Continent({ continent }: ContinentProps): JSX.Element {
   if (router.isFallback) {
     return (
       <>
-        <Head>
-          <title>WorldTrip | {continent.title}</title>
-        </Head>
-
         <Flex
           w="100vw"
           h="100vh"
@@ -64,21 +60,27 @@ export default function Continent({ continent }: ContinentProps): JSX.Element {
   }
 
   return (
-    <Flex direction="column">
-      <Header />
-      <ContinentBanner continent={continent} />
+    <>
+      <Head>
+        <title>WorldTrip | {continent.title}</title>
+      </Head>
 
-      <Flex
-        direction="column"
-        maxW="1160px"
-        mx="auto"
-        mb="10"
-        px={['1rem', '1rem', '0']}
-      >
-        <ContinentContent continent={continent} />
-        <ContinentCities continent={continent} />
+      <Flex direction="column">
+        <Header />
+        <ContinentBanner continent={continent} />
+
+        <Flex
+          direction="column"
+          maxW="1160px"
+          mx="auto"
+          mb="10"
+          px={['1rem', '1rem', '0']}
+        >
+          <ContinentContent continent={continent} />
+          <ContinentCities continent={continent} />
+        </Flex>
       </Flex>
-    </Flex>
+    </>
   );
 }
 
