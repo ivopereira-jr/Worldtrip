@@ -59,7 +59,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### <a name='Pr-requisitos'></a> Pré-requisitos
 
-Antes de começar você vai precisar ter criar os documentos no prismic e colocar as informações caso não tenha uma conta no prismic so criar tem planos gratuitos e pagos no arquivo prismic.json tem a estrutura que eu utilizei para criação do document
+Antes de começar você vai precisar criar os documentos no prismic e colocar as informações caso não tenha uma conta no prismic so criar tem planos gratuitos e pagos no arquivo prismic.json tem a estrutura que eu utilizei para criação do document
 
 </br>
 
