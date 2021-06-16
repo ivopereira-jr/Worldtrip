@@ -36,26 +36,24 @@ export default function Continent({ continent }: ContinentProps): JSX.Element {
 
   if (router.isFallback) {
     return (
-      <>
-        <Flex
-          w="100vw"
-          h="100vh"
-          direction="column"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Spinner
-            thickness="4px"
-            speed="0.65s"
-            emptyColor="gray.200"
-            color="yellow.200"
-            size="xl"
-          />
-          <Heading mt="6px" color="gray.700">
-            Carregando...
-          </Heading>
-        </Flex>
-      </>
+      <Flex
+        w="100vw"
+        h="100vh"
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="yellow.200"
+          size="xl"
+        />
+        <Heading mt="6px" color="gray.700">
+          Carregando...
+        </Heading>
+      </Flex>
     );
   }
 
