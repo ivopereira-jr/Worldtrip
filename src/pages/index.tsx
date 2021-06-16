@@ -1,5 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import Prismic from '@prismicio/client';
+import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import { RichText } from 'prismic-dom';
 import { getPrismicClient } from '../services/prismic';
@@ -22,6 +23,10 @@ export interface ContinentsProps {
 export default function Home({ continents }: ContinentsProps): JSX.Element {
   return (
     <>
+      <Head>
+        <title>WorldTrip | Home</title>
+      </Head>
+
       <Flex direction="column">
         <Header />
         <Banner />

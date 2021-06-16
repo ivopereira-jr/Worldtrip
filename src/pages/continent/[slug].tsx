@@ -1,9 +1,10 @@
 import { Flex, Heading, Spinner } from '@chakra-ui/react';
 import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
+import Head from 'next/head';
 import { GetStaticPaths, GetStaticProps } from 'next';
-
 import { useRouter } from 'next/router';
+
 import { getPrismicClient } from '../../services/prismic';
 
 import Header from '../../components/Header';
@@ -36,6 +37,10 @@ export default function Continent({ continent }: ContinentProps): JSX.Element {
   if (router.isFallback) {
     return (
       <>
+        <Head>
+          <title>WorldTrip | {continent.title}</title>
+        </Head>
+
         <Flex
           w="100vw"
           h="100vh"
