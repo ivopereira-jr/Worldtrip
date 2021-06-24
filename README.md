@@ -5,7 +5,7 @@
 </br>
 
 <h4 align="center">
-	🚧  Worldtrip 🚀 finalizado  🚧
+	🚧  Worldtrip 🚀 finalizado 🏁
 </h4>
 
 <p align="center">
